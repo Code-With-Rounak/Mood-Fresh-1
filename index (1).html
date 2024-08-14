@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+<style>  
+*
+{
+  font-family: "Sofia", sans-serif;
+  
+}
+
+   .bt1
+    {
+      margin-left:50px;  
+      margin-top:10px;
+    }
+    .bt2
+    {
+      margin-top:10px;
+    }
+   .ob20
+   {
+       height:50px;
+       width:100%;
+       border:2px solid black;
+       top:0;
+       position:fixed;
+   }
+  .ob21
+  {
+      height:50px;
+      width:150px;
+      border:2px solid black;
+      text-align:center;
+      margin-top:10px;
+      display:flex;
+      top:0;
+      position:fixed;
+  }
+    .statuses {
+  margin-bottom: 30px;
+  width: 100%;
+  margin-top:55px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 20px 0;
+  border-radius: 20px;
+  border: 1px solid rgb(218, 217, 217);
+  overflow: auto;
+}
+ 
+.statuses .status {
+  display: inline-block;
+  overflow: auto;
+  width: 300px;
+  height: 200px;
+  min-width: 150px;
+  min-height: 70px;
+  background: linear-gradient(to right, red, orange);
+  padding: 2px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius:20px;
+}
+ 
+.statuses .status .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+ 
+.statuses .status img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}  
+     .ob113
+     {
+       height:50px;
+       width:100%;
+       border:2px solid black;
+       display:flex;
+     }
+     .ob114
+     {
+         border-radius:50%;
+     }
+     .ob115{
+       display:flex;
+     }
+     .ob116{
+       height:50px;
+       width:100%;
+       border:2px solid black;
+     }
+     .ob117
+     {
+       height:50px;
+       width:100%;
+       display:flex;
+       border:1px solid black;
+     }
+     .ob118{
+       height:50px;
+       width:80px;
+       border:1px solid black;
+       border-radius:20px;
+       justify-content:center;
+       margin-left:25px;
+       display:flex;
+     }
+     .ob119
+     {
+         height:250px;
+         width:100%;
+         border:2px solid black;
+     }
+.ob2
+  {
+      height:400px;
+      width:80%;
+      margin-left:10%;
+      border:2px solid black;
+      overflow-y:scroll;
+      border-radius:20px;
+     
+  }
+ .ob3
+ {
+     height:80px;
+     width:100%;
+     border:2px solid red;
+     border-radius:20px;
+     display:flex;
+     margin-top:5px;
+ }
+.ob4
+{
+    border-radius:50%;
+    margin-left:10px;
+    background-color:yellow;
+}
+.ob54
+{
+    height:210px;
+    width:100%;
+    overflow-y:scroll;
+    display:flex;
+}
+.ob55
+{
+    border:2px solid black;
+    margin-left:20px;
+    border-radius:20px;
+}
+.ob56
+{
+    border-radius:20px;
+}
+ .ob57
+ {
+     margin-left:40px;
+ }
+.ob58
+{
+    margin-left:60px;
+}
+.ob59
+{
+    margin-left:60px;
+}
+.ob60
+{
+    height:220px;
+    width:100%;
+    border:2px solid black;
+    display:flex;
+}
+.bt10
+{
+  height:50px;
+  width:100%;
+  border:2px solid black;
+  bottom:0;
+  position:fixed;
+  display:flex;
+  justify-content:space-between;
+}
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .bt10 {
+      height: 50px;
+      width: 100%;
+      border: 2px solid black;
+      display: flex;
+      bottom: 0;
+      position: fixed;
+    }
+    
+    .loader {
+            display: flex;
+            align-items: flex-end;
+            height: 50px;
+            width: 200px;
+            margin: 0 auto;
+            margin-top:45%;
+        }
+        .note {
+            width: 60px;
+            height: 60px;
+            margin: 0 5px;
+            background-color: #3498db;
+            border-radius:20px;
+            animation: bounce 0.6s infinite alternate;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .note:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .note:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+        .note6
+        {
+            height:20px;
+            width:70%;
+            border:2px solid black;
+       border-radius:20px;
+       margin-left:15%;
+       animation:border 2s infinite normal;
+        }
+        @keyframes border
+        {
+        0%
+        {
+            background-color:red;
+        }
+        25%
+        {
+            background-color:lightblue;
+        }
+        50%
+        {
+            background-color:orange;
+        }
+        75%
+        {
+            background-color:yellow;
+        }
+        100%
+        {
+            background-color:green;
+        }
+        }
+        .note7
+        { width:50%;
+            font-size:30px;
+           border:2px solid transparent;
+           animation:colorChange 2s infinite ease;
+           margin-left:25%;
+           background-color:black;
+        }
+        @keyframes colorChange {
+            0% { color: red; }
+            20% { color: blue; }
+            40% { color: yellow; }
+            60% { color: pink; }
+            80% { color: lightblue; }
+            100% { color: green; }
+        }
+        .note8
+        {
+            height:100%;
+            width:100%;
+     
+        }
+       .bt100{ margin-left:-40px;}
+       
+       .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content button {
+            color: black;
+            padding: 12px 16px;
+            text-align: left;
+            border: none;
+            background: none;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .dropdown-content button:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropbtn {
+            background-color:lightblue;
+            color: white;
+            padding: 16px;
+            font-size: 5px;
+            border: none;
+            cursor: pointer;
+        }
+ </style>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="note8" id="preloader">
+    <div class="loader">
+        <div class="note"><i class="fa-solid fa-music"></i></div>
+        <div class="note"><i class="fa-solid fa-video"></i></div>
+        <div class="note"><i class="fa-solid fa-shop"></i></div>
+    </div>
+    <div class="note6"></div>
+    <p class="note7">Mood Fresh</p>
+    </div>
+  <div class="ob20">
+        Mood Fresh
+         <a href="/market.html">
+ <button class="bt1"><i class="fa-solid fa-shop"></i></button>
+ </a>
+      <a href="/add.html">
+<button ><i class="fa-solid fa-plus"></i></button>
+</a>
+     <a href="/search.html">
+ <button  class="bt2"><i class="fa-solid fa-magnifying-glass"></i></button>
+ </a>
+      <div class="dropdown">
+    <button class="dropbtn">  <i class="fa-solid fa-bars" id="ob50"></i>
+</button>
+    <div class="dropdown-content">
+       <a href=""> <button>   
+        <i class="fa-regular fa-bookmark"></i>saved
+</button></a>
+       <a href="/help.html"> 
+       <button>  
+        <i class="fa-solid fa-info"></i>help
+</button>
+        <a href="/report.html"><button>    
+        <i class="fa-solid fa-bug"></i>report
+</button></a>
+    </div>
+</div>
+    </div>
+    <div class="container">
+            <div class="col-9">
+                <div class="statuses">
+                    <div class="status">
+                        <div class="image">
+                            <img src=
+"/images/e8646e1643533d6f4601b80a9722bd2f.png"
+                                 alt="img3">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src=
+"/images/815512.jpg"
+                                 alt="img4">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src=
+"/images/Love-dp70.jpg"
+                                 alt="img5">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src=
+"/images/e8646e1643533d6f4601b80a9722bd2f.png"
+                                 alt="img6">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src=
+"/images/815512.jpg"
+                                 alt="img7">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src=
+"/images/815512.jpg"
+                                 alt="img8">
+                        </div>
+                    </div>
+                </div>
+</div>
+<p>posts</p>
+<div class="ob113">
+     <span class="ob115">
+       <img src="/images/815512.jpg" height=50px width=50px class="ob114">
+       <p>
+         code with rb
+       </p>
+     </span>
+   </div>
+   <div class="ob116">
+     <p>
+       Rainy wheather
+     </p>
+   </div>
+   <div class="ob119">
+     <img src="/images/815512.jpg" height=250px width=100%>
+     </tag>
+   </div>
+   <div class="ob117">
+     <span class="ob118">
+       <i class="fa-regular fa-heart" class="ob11"></i>
+     </span>
+     <span class="ob118">
+      <i class="fa-solid fa-comment" class="ob11"></i>
+     </span>
+     <span class="ob118">
+       <i class="fa-solid fa-share" class="ob11"></i>
+     </span>
+   </div>
+   <div class="ob113">
+     <span class="ob115">
+       <img src="/images/4f0ce4287a11be4c4a0e3846b01fee5a.jpg" height=50px width=50px class="ob114">
+       <p>
+         code with rb
+       </p>
+     </span>
+   </div>
+   <div class="ob116">
+     <p>
+       love
+     </p>
+   </div>
+   <div class="ob119">
+     <img src="/images/Love-dp70.jpg" height=250px width=100%>
+     </tag>
+   </div>
+   <div class="ob117">
+     <span class="ob118">
+       <i class="fa-regular fa-heart" class="ob11"></i>
+     </span>
+     <span class="ob118">
+      <i class="fa-solid fa-comment" class="ob11"></i>
+     </span>
+     <span class="ob118">
+       <i class="fa-solid fa-share" class="ob11"></i>
+     </span>
+   </div>
+   <div class="ob113">
+     <span class="ob115">
+       <img src="/images/815512.jpg" height=50px width=50px class="ob114">
+       <p>
+         code with rb
+       </p>
+     </span>
+   </div>
+   <div class="ob116">
+     <p>
+       shreyanka patil
+     </p>
+   </div>
+   <div class="ob119">
+     <img src="/images/IMG_20240702_171129.jpg" height=250px width=100%>
+     </tag>
+   </div>
+   <div class="ob117">
+     <span class="ob118">
+       <i class="fa-regular fa-heart" class="ob11"></i>
+     </span>
+     <span class="ob118">
+      <i class="fa-solid fa-comment" class="ob11"></i>
+     </span>
+     <span class="ob118">
+       <i class="fa-solid fa-share" class="ob11"></i>
+     </span>
+   </div>
+   
+   </div>
+<p>trending song </p>
+<div class="ob2">
+    <div class="ob3">
+        <img src="" class="ob4" height=80px width=80px >
+        <p> Aaoge Tum Kabhi<br>the local train
+        </p>
+    </div>
+    <div class="ob3">
+        <img src="" class="ob4" height=80px width=80px >
+        <p> Aaoge Tum Kabhi<br>the local train
+        </p>
+    </div>
+    <div class="ob3">
+        <img src="" class="ob4" height=80px width=80px >
+        <p> Aaoge Tum Kabhi<br>the local train
+        </p>
+    </div>
+    <div class="ob3">
+        <img src="" class="ob4" height=80px width=80px >
+        <p> Aaoge Tum Kabhi<br>the local train
+        </p>
+    </div>
+    <div class="ob3">
+        <img src="" class="ob4" height=80px width=80px >
+        <p> Aaoge Tum Kabhi<br>the local train
+        </p>
+    </div>
+</div>
+<p>top sales</p>
+<div class="ob60">
+ <div class="ob54">
+<div class="ob55">
+    <img src="" height=100px width=150px class="ob56" Style="background-color:black">
+    <p class="ob57">black tshirt<br>
+    <p class="ob58">400/-</p>
+   <p class="ob59">60% off</p>
+</div>
+<div class="ob55">
+    <img src="" height=100px width=150px class="ob56" Style="background-color:blue">
+    <p class="ob57">blue tshirt<br>
+    <p class="ob58">600/-</p>
+   <p class="ob59">70% off</p>
+</div>
+<div class="ob55">
+    <img src="" height=100px width=150px class="ob56" Style="background-color:yellow">
+    <p class="ob57">yellow tshirt<br>
+    <p class="ob58">500/-</p>
+   <p class="ob59">80% off</p>
+</div>
+<div class="ob55">
+    <img src="" height=100px width=150px class="ob56" Style="background-color:red">
+    <p class="ob57">red tshirt<br>
+    <p class="ob58">700/-</p>
+   <p class="ob59">60% off</p>
+</div>
+<div class="ob55">
+    <img src="" height=100px width=150px class="ob56" Style="background-color:black">
+    <p class="ob57">black tshirt<br>
+    <p class="ob58">800/-</p>
+   <p class="ob59">60% off</p>
+</div>
+</div>  
+</div>
+<div class="bt10">
+  <a href="/index.html">
+    <button> <i class="fa-solid fa-house"></i></button>
+    </a>
+      <a href="/music.html">
+    <button><i class="fa-solid fa-music"></i></button>
+    </a>
+      <a href="/video.html">
+    <button><i class="fa-solid fa-video"></i></button>
+    </a>
+    <a href="/message.html">
+    <button><i class="fa-solid fa-message"></i></button> 
+    </a>
+    <a href="/profile.html">
+    <button class="bt100"><i class="fa-solid fa-user"></i></button>
+    </a>
+ </div>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+<style>
+*{
+    font-family: "Sofia", sans-serif;
+
+}
+  .bt1
+    {
+      margin-left:50px;  
+      margin-top:10px;
+    }
+    .bt2
+    {
+      margin-top:10px;
+    }
+   .ob20
+   {
+       height:50px;
+       width:100%;
+       border:2px solid black;
+   }
+   p
+   {
+     margin-top:20px;
+   }
+   *
+   {
+     background-color:lightblue;
+   }
+   .bt10
+{
+  height:50px;
+  width:100%;
+  border:2px solid black;
+  bottom:0;
+  position:fixed;
+  display:flex;
+  justify-content:space-between;
+}
+       .bt100{ margin-left:-40px;}
+       .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content button {
+            color: black;
+            padding: 12px 16px;
+            text-align: left;
+            border: none;
+            background: none;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .dropdown-content button:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropbtn {
+            background-color:lightblue;
+            color: white;
+            padding: 16px;
+            font-size: 5px;
+            border: none;
+            cursor: pointer;
+        }
+</style>
+  <title></title>
+</head>
+
+<body>
+    <div class="ob20">
+        Mood Fresh
+                 <a href="/market.html">
+                   <button class="bt1"><i class="fa-solid fa-shop"></i></button>
+                 </a>
+                 <a href="">
+                   <button><i class="fa-solid fa-plus"></i></button>
+                 </a>
+                 <a href="/search.html">
+                   <button class="bt2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                 </a>
+                  <div class="dropdown">
+    <button class="dropbtn">  <i class="fa-solid fa-bars" id="ob50"></i>
+</button>
+    <div class="dropdown-content">
+       <a href=""> <button>   
+        <i class="fa-regular fa-bookmark"></i>saved
+</button></a>
+       <a href="/help.html"> 
+       <button>  
+        <i class="fa-solid fa-info"></i>help
+</button>
+        <a href="/report.html"><button>    
+        <i class="fa-solid fa-bug"></i>report
+</button></a>
+    </div>
+</div>
+<p>write name and press enter key</p>
+<input type="text" id="searchbar" onkeydown="search(event)">
+    <div id="searchResults"></div>
+    </div>
+    <div class="bt10">
+  <a href="/index.html">
+    <button> <i class="fa-solid fa-house"></i></button>
+    </a>
+      <a href="/music.html">
+    <button><i class="fa-solid fa-music"></i></button>
+    </a>
+      <a href="/video.html">
+    <button><i class="fa-solid fa-video"></i></button>
+    </a>
+    <a href="/message.html">
+    <button><i class="fa-solid fa-message"></i></button> 
+    </a>
+    <a href="/profile.html">
+    <button class="bt100"><i class="fa-solid fa-user"></i></button>
+    </a>
+ </div>
+      <script src="main.js"></script>
+
+</body>
+
+</html>

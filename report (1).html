@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+ <style> 
+ .ob60
+  {
+  height:400px;
+  width:100%;
+  background-color:lightblue;
+  display:flex;
+  }
+  .ob61
+  {
+  height:300px;
+  width:80%;
+  border:2px solid black;
+  margin-left:10%;
+  margin-top:50px;
+  
+  }
+  </style>
+</head>
+
+<body>
+<h1>reports</h1>
+<div class="ob60">
+    <div class="ob61">
+        <h2>please enter your report here(we take your report seriously )</h2>
+        <input type="text" id="inputField" placeholder="Write something">
+<button onclick="saveText()">Submit</button>
+        </div>
+</div>
+  <script>
+    function saveText() {
+    let inputText = document.getElementById('inputField').value;
+    let savedText = document.getElementById('savedText');
+    savedText.innerHTML += `<p>${inputText}</p>`;
+  }
+  </script>
+</body>
+
+</html>
